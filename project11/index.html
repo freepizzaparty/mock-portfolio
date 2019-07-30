@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>Alexis Can Code</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styler.css">
+	<link rel="stylesheet" type="text/css" href="media-queries.css">
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+
+<body> 
+
+
+<!------------- SPLASH SECTION -------------------->
+
+<section id="splash">  
+<!--Navigation Bar holds Navigation Buttons -->
+<div id="navbar">
+		<div class="container">  <!-- container keeps everything aligned and centered no matter what the window size -->
+			<ul  id="menu">
+				<!-- button class provides button-like appearance and scrolling javascript (see bottom of html code) -->
+				<li><a href="#aboutme" class="button">About Me</a></li>
+				<li><a href="#media" class="button">Media</a></li>
+	   			<li><a href="#portfolio" class="button">Portfolio</a></li>
+			</ul>
+		</div> <!-- end container -->
+</div> <!-- end navbar -->
+
+<div id="title-page">
+	<div class="container">
+		<h1> Alexis Can Code </h1>
+		<h3> My coding journey</h3>
+	</div> <!-- end container--> 
+</div> <!-- end title-page-->
+
+</section> <!-- end SPLASH section -->
+
+<section id="aboutme">
+	<div class="container">
+		<h1> About Me </h1>
+		<img src= "images/alexis.jpg" class="fltright"  alt="A cute girl.">
+		<p>Candy toffee cupcake toffee. Tootsie roll danish chupa chups bonbon caramels muffin wafer. Chocolate cake jelly-o jelly-o donut. Pastry candy donut cookie I love sweet oat cake lollipop. Halvah halvah apple pie chocolate bar cookie pie caramels. Cake jelly beans I love brownie caramels. Brownie gummi bears pastry sweet roll. Chocolate cake caramels croissant sugar plum sweet marzipan pudding jelly beans. I love jelly beans jelly tootsie roll ice cream danish sugar plum. Cake I love oat cake I love donut oat cake. Wafer biscuit tootsie roll candy. Chocolate chocolate ice cream jelly cotton candy I love candy canes. Gummi bears tiramisu topping pie dragée.</p>
+     
+
+		<p>Biscuit pudding gummi bears. Tiramisu marzipan danish. Powder fruitcake toffee pastry cotton candy muffin soufflé. Macaroon I love I love lollipop muffin tiramisu tiramisu ice cream I love. Biscuit lemon drops jelly-o tiramisu wafer jelly beans. Marzipan muffin cheesecake oat cake. Candy canes I love marzipan pastry fruitcake. Carrot cake brownie marzipan tootsie roll biscuit biscuit bear claw chocolate bar. Lemon drops dessert carrot cake cotton candy muffin jujubes. Chupa chups lollipop toffee candy canes. Cheesecake macaroon cotton candy I love pudding pie muffin cupcake powder. Biscuit lollipop oat cake chocolate cake carrot cake fruitcake pudding marshmallow marzipan. Jelly cake wafer dessert.</p>
+
+		<p>Dessert sweet oat cake dessert I love ice cream. Gingerbread candy jelly beans croissant powder macaroon dessert pie. I love brownie bear claw tiramisu powder sesame snaps cupcake caramels. Muffin I love chocolate cake I love cupcake gummi bears I love tootsie roll. Sweet roll wafer biscuit pastry jelly beans lollipop powder pudding. Candy cake I love soufflé cheesecake. Caramels I love cake cookie marshmallow jelly-o dragée I love. Donut brownie toffee lollipop biscuit I love pudding candy. Muffin sugar plum marzipan sesame snaps cotton candy gummies. Pudding biscuit chupa chups lollipop tiramisu lemon drops donut caramels. Donut halvah bonbon jelly-o jelly beans I love apple pie. Liquorice marzipan cake. Tart brownie gummies soufflé. Pudding sweet roll jujubes bear claw.
+
+		</p>
+	</div> <!--end container-->
+	
+</section>
+
+<section id="media">
+	<div class="container">
+		<h1> Getting Started </h1>
+		<iframe width="760" height="515" src="http://www.youtube.com/embed/pEnJR8SmmXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div><!--end container-->
+	
+</section>
+
+<section id="portfolio">
+	<div class="container">
+		<h1>Portfolio</h1>
+		<div id="portfoliostyle">
+			<ul>
+			  <li>This <a href="https://codepen.io/freepizzaparty/pen/MPvNmg">project</a> demonstrates my ability to create Javascript scripts from scratch</li>
+			  <li>This <a href="https://codepen.io/freepizzaparty/pen/eEPxBr">project</a> demonstrates my ability to create a responsive page using HTML and CSS from scratch</li>
+			  <li>This <a href="https://codepen.io/freepizzaparty/pen/aRGZWp">challenge</a> demonstrates my ability to use HTML and CSS</li>
+			  <li>This <a href="https://codepen.io/freepizzaparty/pen/yRNJVW">challenge</a> also shows my ability to use HTML and CSS</li>
+			  <li>This <a href="https://codepen.io/freepizzaparty/pen/yRNJVW">challenge</a> demonstrates my ability to use Javascript</li>
+			  
+			</ul>
+		</div>
+	</div><!--end container-->
+	
+</section>
+
+<section id="footer">
+	<div class="container">
+		<p> Made with love by Alexis C. Frankel</p>
+		<p> Send me an <a href = "mailto: alexiscancode@gmail.com">email</a> </p>
+
+	</div><!--end container-->
+</section>
+<!-- JAVASCRIPT CODE -->
+<!--jquery required for scrolling effect -->
+<script src="js/jquery.js"></script>
+<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+<script type='text/javascript'>
+jQuery(document).ready(function () {
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+#splash {
+	background-color: #fff;
+	height:1000px;
+	/*top aligns image at the top and fixed makes parallax effect*/
+	background: url(images/clouds.jpg) no-repeat center top fixed;
+	background-size:cover;
+}
+#aboutme {
+	background-color: #B2DEFF;
+	padding-top:60px;
+	padding-bottom:60px;
+	
+}
+#media{
+	/*top aligns image at the top and fixed makes parallax effect*/
+	background: url(images/clouds2blurred.jpg) no-repeat center top fixed;
+	background-size:cover;
+	padding-top:60px;
+	padding-bottom:60px;
+	text-align:center;
+}
+#portfolio {
+	background-color: #FFCCE7;
+	padding-top:60px;
+	padding-bottom: 60px;
+	height:450px;
+}
+#footer {
+	background-color: #FFBDDB;
+	height: 150px;
+	text-align:center;
+	padding-top: 50px;
+}
+
+.container {
+	width: 1000px; /*static width container stays at this width no matter what*/
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+#portfoliostyle {
+	  width:80%;
+	  margin: 0 auto;
+	  border: 10px solid #B2DEFF; 
+	  background-color: #fff;
+	  overflow:hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+#navbar{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.4); /* white transparency)*/
+	height: 54px;
+	position:fixed;
+	top:0;
+}
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px; /*closer to top of the page */
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 20px 125px 20px 125px;
+	background-color: rgba(255,255,255,0.4);
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: rgba(42, 188, 238, 0.1);
+
+}
+
+a:link {
+	color: #6297F9;
+}
+a:visited {
+	color: #6297F9;
+}
+a:hover {
+	color: #4578DF;
+	text-decoration: none;
+}
+
+/* -------------------- TITLE PAGE STYLES --------------------*/
+#title-page{
+  width: 100%;
+  padding-top: 185px; /* provides a lot of space to view the background image */
+  color: #fff;
+  text-align: right;
+}
+#title-page h1 {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 80px; 
+  text-shadow: 3px 3px #000;
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  text-shadow: 2px 2px #000;
+}
+
+/*---------------------HEADER STYLES -------------------------*/ 
+
+h1 {
+	font-family: 'Major Mono Display', monospace;
+	text-shadow: 1px 1px #f0f;
+	font-size:40px;
+	padding-bottom: 40px;
+	text-align:left;
+}
+
+/*----------------- IMG STYLES -----------------------------*/ 
+
+.fltright {
+    float: right;
+    margin: 20px;
+    width:550px;
+    height:395px;
+
+
